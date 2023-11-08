@@ -1,25 +1,16 @@
 import React from 'react'
 import './App.css'
+import { Accordion } from './Components/Accordion/Accordion'
+import { Rating } from './Components/Rating/Rating'
 
 function App() {
   return (
     <div>
       <h1>HELLO!</h1>
-      <Star />
-      <Star />
-      <Star />
-      <Star />
-      <Star />
+      <Rating value={4}/>
+      <Accordion title={' SUPER '} collapsed={false} />
     </div>
   );
 }
 
-export default App;
-
-const Star = () => {
-  return (
-    <div>
-      ⭐️
-    </div>
-  )
-}
+export default App
