@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <h1>HELLO!</h1>
-      <Rating value={4}/>
+      <Rating value={2}/>
       <Accordion title={' SUPER '} collapsed={false} />
     </div>
   );

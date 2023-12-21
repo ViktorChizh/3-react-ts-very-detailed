@@ -18,7 +18,6 @@ type AccordionTitlePropsType = {
   title: string
 }
 
-
 function AccordionTitle(props: AccordionTitlePropsType) {
   return <>
     <h2>{props.title}</h2>
@@ -27,11 +26,12 @@ function AccordionTitle(props: AccordionTitlePropsType) {
 function AccordionBody() {
   return <>
     <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
+      {Array(5).fill(0).map((_,i) => <li>{i+1}</li>)}
+      {/*<li>1</li>*/}
+      {/*<li>2</li>*/}
+      {/*<li>3</li>*/}
+      {/*<li>4</li>*/}
+      {/*<li>5</li>*/}
     </ul>
   </>
 }
