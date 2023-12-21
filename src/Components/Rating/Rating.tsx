@@ -1,21 +1,43 @@
 import React from "react"
 
+type StarPropsType = {
+    value: boolean
+}
+
+const Star = (props: StarPropsType) => {
+    return (
+        <span>
+            {/* { props.value && <b>⭐️</b>} */}
+            { props.value && <b style={{background: 'green'}}>⭐️</b> }
+            { !props.value && <b style={{background: 'red'}}>⭐️</b> }
+        </span>
+    )
+}
 
 type RatingPropsType = {
     value: 0 | 1 | 2 | 3 | 4 | 5
 }
 export function Rating(props: RatingPropsType) {
-    // if (props.value === 1) {
-        return (
-            <div>
-                <Star value={props.value > 0} />
-                <Star value={props.value > 1} />
-                <Star value={props.value > 2} />
-                <Star value={props.value > 3} />
-                <Star value={props.value > 4} />
-            </div>
-        )
-    }
+    return (
+        <div>
+            <Star value={props.value > 0}/>
+            <Star value={props.value > 1}/>
+            <Star value={props.value > 2}/>
+            <Star value={props.value > 3}/>
+            <Star value={props.value > 4}/>
+        </div>
+    )
+//    if (props.value === 1) {
+//         return (
+//             <div>
+//                 <Star value={true} />
+//                 <Star value={false} />
+//                 <Star value={false} />
+//                 <Star value={false} />
+//                 <Star value={false} />
+//             </div>
+//         )
+//     }
 //     if (props.value === 2) {
 //         return (
 //             <div>
@@ -69,18 +91,4 @@ export function Rating(props: RatingPropsType) {
 //             <Star value={false} />
 //         </div>
 //     )
-// }
-
-type StarPropsType = {
-    value: boolean
-}
-
-const Star = (props: StarPropsType) => {
-    return (
-        <span>
-            {/* { props.value && <b>⭐️</b>} */}
-            { props.value && <b style={{background: 'green'}}>⭐️</b> }
-            { !props.value && <b style={{background: 'red'}}>⭐️</b> }
-        </span>
-    )
 }
