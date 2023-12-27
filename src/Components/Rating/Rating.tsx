@@ -7,7 +7,7 @@ type StarPropsType = {
 
 const Star = (props: StarPropsType) => {
     return (
-        <span onClick={()=>props.setValue()}>
+        <span onClick={props.setValue}>
             <b style={props.value ? {background: 'green'} : {background: 'red'}}>⭐️</b>
         </span>
     )
