@@ -9,7 +9,7 @@ type AccordionPropsType = {
 export const Accordion = (props: AccordionPropsType) => {
   return (
     <>
-      <AccordionTitle title={props.title}  collapsed={ props.collapsed }  setCollapsed = {props.setCollapsed} />
+      <AccordionTitle title={props.title} onClick = {()=>props.setCollapsed(!props.collapsed)} />
       {!props.collapsed && <AccordionBody />}
     </>
   )
@@ -17,13 +17,12 @@ export const Accordion = (props: AccordionPropsType) => {
 
 type AccordionTitlePropsType = {
   title: string
-  collapsed: boolean
-  setCollapsed: (collapsed: boolean) => void
+  onClick: () => void
 }
 
 function AccordionTitle(props: AccordionTitlePropsType) {
   return <>
-    <h2 onClick={()=>props.setCollapsed(!props.collapsed)} style={{cursor:'pointer'}}>{props.title}</h2>
+    <h2 onClick={props.onClick} style={{cursor:'pointer'}}>{props.title}</h2>
   </>
 }
 function AccordionBody() {
