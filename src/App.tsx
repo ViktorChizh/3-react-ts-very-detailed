@@ -11,9 +11,12 @@ function App() {
   return (
     <div>
       <h1>HELLO!</h1>
+        <span>controled Rating</span>
       <Rating value={value} setValue={setValue}/>
+        <span>uncontroled Rating</span>
       <UnControlledRating />
-      <Accordion title={' SUPER '} collapsed={collapsed} setCollapsed = {setCollapsed}/>
+
+      <Accordion title={' ControlledSUPER '} collapsed={collapsed} setCollapsed = {setCollapsed}/>
       <UnControlledAccordion title={'UnControlledSUPER'} />
     </div>
   );

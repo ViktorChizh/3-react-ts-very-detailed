@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {UnControlledAccordion} from '../Accordion/UnControlledAccordion';
 
 type UnControlledStarPropsType = {
     value: boolean
@@ -9,8 +8,9 @@ const Star = (props: UnControlledStarPropsType) => {
     return (
         <span>
             {/* { props.value && <b>⭐️</b>} */}
-            { props.value && <b style={{background: 'green'}}>⭐️</b> }
-            { !props.value && <b style={{background: 'red'}}>⭐️</b> }
+            {/*{props.value && <b style={{background: 'green'}}>⭐️</b>}*/}
+            {/*{!props.value && <b style={{background: 'red'}}>⭐️</b>}*/}
+            <b style={props.value ? {background: 'green'} : {background: 'red'}}>⭐️</b>
         </span>
     )
 }
