@@ -4,7 +4,7 @@ type UnControlledStarPropsType = {
     value: boolean
 }
 
-const Star = (props: UnControlledStarPropsType) => {
+export const Star = (props: UnControlledStarPropsType) => {
     return (
         <span>
             {/* { props.value && <b>⭐️</b>} */}

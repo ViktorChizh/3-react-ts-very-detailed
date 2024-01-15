@@ -5,7 +5,7 @@ type StarPropsType = {
     setValue: () => void
 }
 
-const Star = (props: StarPropsType) => {
+export const Star = (props: StarPropsType) => {
     return (
         <span onClick={props.setValue}>
             <b style={props.value ? {background: 'green'} : {background: 'red'}}>⭐️</b>
