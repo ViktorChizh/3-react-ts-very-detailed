@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {Rating, Star} from './Rating'
 
 export default {
+    title: 'Rating',
     component: Rating
 }
 

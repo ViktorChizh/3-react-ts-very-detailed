@@ -1,0 +1,52 @@
+.select {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.arrowUp,
+.arrowDown {
+    width: 15px;
+    height: 15px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    transform-origin: center;
+    position: relative;
+    transition: 0.25s;
+    &:hover{
+        cursor: pointer;
+    }
+    &::after {
+        content: 'v';
+        position: absolute;
+        top: -35%;
+        left: 25%;
+        color: gray;
+    }
+}
+.arrowUp {
+    transform: rotate(0deg);
+}
+.arrowDown {
+    transform: rotate(180deg);
+}
+
+.selectBody {
+    margin: 5px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    &:hover{
+        cursor: pointer;
+    }
+}

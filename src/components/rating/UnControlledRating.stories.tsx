@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Star, UnControlledRating } from './UnControlledRating';
 
 export default {
+    title:"UnControlledRating",
     component: UnControlledRating
 }
 

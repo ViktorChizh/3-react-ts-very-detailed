@@ -2,9 +2,10 @@ import {UnControlledAccordion} from './UnControlledAccordion';
 import React from 'react';
 
 export default {
-    component: UnControlledAccordion,
+    title: 'UnControlledAccordion',
+    component: UnControlledAccordion
 }
 
-export const DemoAccordion = () => {
+export const DemoUnControlledAccordion = () => {
    return <UnControlledAccordion title={ 'UnControlledAccordion'} />
 }

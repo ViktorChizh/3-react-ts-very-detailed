@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Star} from './Rating'
 
 export default {
+    title: 'Star',
     component: Star
 }
 export const redStar = () => <Star value={false} setValue={()=>{}}/>
