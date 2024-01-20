@@ -16,7 +16,9 @@ export type baseItemsType = ItemType[]
 export const baseItems: baseItemsType = [
     {id: 1, title:'Viktor'},
     {id: 2, title: 'Maria'},
-    {id: 3, title: 'Agnia'}
+    {id: 3, title: 'Agnia'},
+    {id: 4, title: 'Umka'},
+    {id: 5, title: 'Olana'}
 ]
 
 function App() {
