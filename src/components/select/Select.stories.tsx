@@ -9,5 +9,5 @@ export default {
 
 export const SelectDemo = () => {
     const [selectId, setSelectId] = useState(1)
-    return <Select selectId={selectId} onClick={setSelectId} options={baseItems} />
+    return <Select selectId={selectId} onClick={setSelectId} options={baseItems} bgc={'mintcream'}/>
 }

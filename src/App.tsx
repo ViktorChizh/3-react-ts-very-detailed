@@ -45,7 +45,8 @@ function App() {
       />
       <UnControlledAccordion title={'UnControlledSUPER'} />
 
-        <Select selectId={selectId} onClick={setSelectId} options={baseItems}/>
+        <Select selectId={selectId} onClick={setSelectId} options={baseItems} bgc='mintcream'/>
+        xbxcvnxf
     </div>
   );
 }
