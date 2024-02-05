@@ -16,29 +16,28 @@
     height: 15px;
     border: 2px solid grey;
     border-radius: 50%;
-    transform-origin: center;
     position: relative;
     transition: 0.25s;
     &:hover{
         cursor: pointer;
     }
     &::after {
-        content: 'v';
+        content: '>';
         position: absolute;
-        top: -35%;
-        left: 25%;
+        top: -30%;
+        left: 20%;
         color: gray;
     }
 }
 .arrowUp {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
 }
 .arrowDown {
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
 }
 
 .selectBody {
-    position: absolute; /* для того, чтобы селектбоди не опускало нижний контент, а накладывалось на него*/
+    position: absolute; /* для того, чтобы selectBody не опускало нижний контент, а накладывалось на него*/
     margin: 2px 0 0 10px;
     display: flex;
     flex-direction: column;

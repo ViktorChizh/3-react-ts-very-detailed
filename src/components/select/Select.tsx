@@ -14,12 +14,9 @@ type SelectType = {
     bgc?: string // если необходимо задать цвет, отличный от белого
 }
 
-export const Select: FC<SelectType> = ({selectId, onClick, options, bgc}) => {
+export const Select: FC<SelectType> = React.memo(({selectId, onClick, options, bgc}) => {
     const [showBody, setShowBody] = useState<boolean>(false)
     const [hoveredElement, setHoveredElement] = useState(selectId)
-
-    // const selectBody = document.querySelector('.selectBody')
-    // if(selectBody){selectBody.scrollTop = options[hoveredElement].id}
 
     const KeyHandler = (e: KeyboardEvent<HTMLDivElement>) => {
         if(e.key==='ArrowUp'){
@@ -81,4 +78,4 @@ export const Select: FC<SelectType> = ({selectId, onClick, options, bgc}) => {
             </div>}
         </div>
     )
-} 
+})
