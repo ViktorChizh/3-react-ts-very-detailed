@@ -5,6 +5,7 @@ import {Rating} from './components/rating/Rating'
 import {UnControlledAccordion} from './components/accordion/UnControlledAccordion';
 import {UnControlledRating} from './components/rating/UnControlledRating';
 import {Select} from './components/select/Select';
+import {Clock} from './components/clock/Clock';
 
 export type ItemType = {
     id: number
@@ -49,6 +50,12 @@ function App() {
                 onClick={onClickItem}
             />
             <UnControlledAccordion title={'UnControlledSUPER'}/>
+
+            <div style={{display:"flex", alignItems:'center', gap:'20px', margin:'10px'}}>
+                <Clock isClockDigital={false}/>
+                <Clock isClockDigital={true}/>
+            </div>
+
 
             <Select selectId={selectId} onClick={selectOnClickHandler} options={baseItems} bgc="mintcream"/>
             <span>текст, чтобы видеть, что selectBody накладывается сверху, а не сдвигает вниз</span>
