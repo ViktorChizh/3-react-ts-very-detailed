@@ -35,8 +35,7 @@ function App() {
     }, [selectId])
 
     return (
-        <div>
-            <h1>HELLO!</h1>
+        <div style={{margin:'10px'}}>
             <span>controlled Rating</span>
             <Rating value={value} setValue={setValue}/>
             <span>uncontrolled Rating</span>
